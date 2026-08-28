@@ -1,8 +1,8 @@
-# <div align="center"> VISUAL QUESTION ANSWERING CON EARLY FUSION E INTELIGENCIA ARTIFICIAL EXPLICABLE </div>
+# <div align="center"> VISUAL QUESTION ANSWERING CON INTERMEDIATE FUSION E INTELIGENCIA ARTIFICIAL EXPLICABLE </div>
 
 # 1) DESCRIPCIÓN
 - Se desarrolló un modelo *Visual-Question-Answering*, utilizando una red neuronal convolucional para la extracción de *features* de imágenes y un *Multilayer Perceptron* de tres capas lineales *fully connected* seguidas por la función de activación ReLU, para generar *embeddings* de texto a partir de representaciones *Bag of Words*.
-- La técnica utilizada para combinar las modalidades de imágenes y texto fue *Early Fusion*, a través de la multiplicación de los vectores de ambas modalidades.
+- La técnica utilizada para combinar las modalidades de imágenes y texto fue *Intermediate Fusion*, a través de la multiplicación de los vectores de ambas modalidades.
 - Asimismo, se emplearon métricas de *clustering* como *Silhoutte Score* (intra-inter cluster) para medir la agrupación entre *embeddings* de texto respecto a temas/preguntas y su visualización en un espacio bidimensional mediante el algoritmo t-SNE.
 - Además, se utilizó *Grad-CAM*, un método de *Explainable AI (XAI)*, para visualizar las regiones de la imagen que más influyeron en la clasificación de la red neuronal convolucional.
 - Dado que las preguntas del *dataset* presentan una complejidad semántica manejable, se utilizó una arquitectura basada en *Bag of Words*, priorizando el análisis de los embeddings generados y la aplicación de técnicas de interpretabilidad (XAI).
@@ -43,7 +43,7 @@
 
 ## 2.3) *FUSION STRATEGY*
 
-- Se utiliza la estrategia de *Early Fusion* mediante la multiplicación elemento a elemento de los *embeddings* (vectores) de imagen y texto, ambos de dimensión 32, obteniendo una representación conjunta multimodal.
+- Se utilizó la estrategia *Intermediate Fusion*, dado que se emplearon modelos separados y específicos para la generación de *embeddings* de texto e imagen a través de un *MultiLayer Perceptron* y una *Convolutional Neural Network*, respectivamente. Posteriormente, mediante la multiplicación elemento a elemento de los *embeddings* (vectores) de imagen y texto, ambos de dimensión 32, se obtuvo la representación conjunta multimodal.
 
 ## 2.4) *PREDICTION LAYER*
 
