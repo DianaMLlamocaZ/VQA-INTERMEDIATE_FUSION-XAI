@@ -58,7 +58,7 @@
 - **Lenguaje de programación:** Python
 - **Deep Learning Framework y XAI:** PyTorch
 - **Preprocesamiento de datos (texto e imagen):** OpenCV, re
-- **Métricas de clustering y t-SNE:** Numpy, Spicy, Sklearn
+- **Métricas de clustering y t-SNE:** Numpy, Scipy, Sklearn
 - **Almacenamiento de resultados:** json
 - **Gráficas:** Matplotlib, SeaBorn
 - **Flask:** Diseño de APIs y aplicación
